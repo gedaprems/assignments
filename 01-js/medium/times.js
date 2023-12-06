@@ -9,5 +9,20 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
+    const start = new Date();
+    
+    // let start = d.getTime();
+    // console.log(start.getTime());
+
+    for(var i=0; i<10000; i++){
+        console.log(i);
+    }
+    const end = new Date();
+    // let end = d.getTime();
+
+    console.log("Time Taken : "+(end.getTime() - start.getTime()));
+
     return 0.01;
 }
+
+calculateTime();
